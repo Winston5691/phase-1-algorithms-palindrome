@@ -3,11 +3,11 @@ global.expect = chai.expect;
 const isPalindrome = require("../index");
 
 describe("isPalindrome", () => {
-  it("returns true for 'abba'", () => {
-    expect(isPalindrome("abba")).to.be.true;
+  it("returns true for 'rotator'", () => {
+    expect(isPalindrome("rotator")).to.be.true;
   });
-  it("returns true for 'racecar'", () => {
-    expect(isPalindrome("racecar")).to.be.true;
+  it("returns true for 'deed'", () => {
+    expect(isPalindrome("deed")).to.be.true;
   });
   it("returns true for 'a'", () => {
     expect(isPalindrome("a")).to.be.true;
