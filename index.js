@@ -1,25 +1,22 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  // checking for palindrome
+  let regex = /[\W_]/g // removes white spaces and non-alphanumeric characters
+  let newWord = word.replace(regex, '').split('').reverse().join('')
+  console.log(word === newWord)
+  return word === newWord
 }
 
-/* 
-  Add your pseudocode here
-*/
-
-/*
-  Add written explanation of your solution here
-*/
-
-// You can run `node index.js` to view these console logs
+isPalindrome('rotato')
 if (require.main === module) {
   // add your own custom tests in here
-  console.log("Expecting: true");
-  console.log("=>", isPalindrome("racecar"));
+  console.log('Expecting: true')
+  console.log('=>', isPalindrome('deed'))
 
-  console.log("");
+  console.log('')
 
-  console.log("Expecting: false");
-  console.log("=>", isPalindrome("robot"));
+  console.log('Expecting: false')
+  console.log('=>', isPalindrome('robot'))
 }
 
-module.exports = isPalindrome;
+module.exports = isPalindrome
